@@ -1,0 +1,233 @@
+{
+	"info": {
+		"_postman_id": "82e1ae65-9705-4b86-87b9-e613b443b8b5",
+		"name": "FRS-SDK",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "client register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "api_key",
+						"value": "144278c3bcb2127eccca0ac1aaf799a84a6aa048",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "INT",
+							"type": "default"
+						},
+						{
+							"key": "unique_key",
+							"value": "123",
+							"type": "default"
+						},
+						{
+							"key": "license_key",
+							"value": "qwerty",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:6000/register/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "person mathcing",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "api_key",
+						"value": "144278c3bcb2127eccca0ac1aaf799a84a6aa048",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "client_unique_key",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "threshold",
+							"value": "0.7",
+							"type": "default"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/intozi/Downloads/brd.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:6000/match/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"match",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "person add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "api_key",
+						"value": "144278c3bcb2127eccca0ac1aaf799a84a6aa048",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "profile_name",
+							"value": "BRAD",
+							"type": "default"
+						},
+						{
+							"key": "profile_id",
+							"value": "BRD",
+							"type": "default"
+						},
+						{
+							"key": "client_unique_key",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/intozi/Downloads/index.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:6000/verify",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"verify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "client updation",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "api_key",
+						"value": "144278c3bcb2127eccca0ac1aaf799a84a6aa048",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "prev_name",
+							"value": "INT",
+							"type": "default"
+						},
+						{
+							"key": "new_name",
+							"value": "INTOZI",
+							"type": "default"
+						},
+						{
+							"key": "unique_key",
+							"value": "1",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:6000/register/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "client delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "api_key",
+						"value": "144278c3bcb2127eccca0ac1aaf799a84a6aa048",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "INTOZI",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:6000/register/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
